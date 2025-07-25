@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillForge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🛠️ SkillForge</h1>
+        <p>Your Personal Developer Dashboard</p>
+        <p>Track. Build. Grow.</p>
+    </header>
+
+    <section id="controls">
+        <input type="text" name="" id="searchInput" placeholder="Search skills or projects...">
+        <select name="" id="filtertype">
+            <option value="all">All</option>
+            <option value="skills">Skills</option>
+            <option value="projects">Projects</option>
+        </select>
+        <button id="sortAZ">Sort A-Z</button>
+    </section>
+
+    <section id="skills">
+        <h2>🧠 Skills You're Learning</h2>
+        <div id="skillcard" class="cardcontainer">
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>💻 Your Projects</h2>
+        <div id="projectcard" class="cardcontainer">
+
+        </div>
+    </section>
+
+    <section id="notes">
+        <h2>📓 Learning Notes & Logs</h2>
+        <button class="add-note-log-btn" onclick="createNoteOrLogForm()">➕ Add Note / Log</button>
+        <div id="notescontainer" class="cardcontainer">
+
+        </div>
+    </section>
+
+    <section id="addnew">
+        <h2>➕ Add New Entry</h2>
+        <div class="new-entry-controls">
+            <select id="entryTypeSelector">
+                <option value="">-- Select Entry Type --</option>
+                <option value="note">📝 Note</option>
+                <option value="log">📆 Log</option>
+                <option value="idea">💡 Idea</option>
+                <option value="goal">🎯 Goal</option>
+                <option value="link">🔗 Link</option>
+            </select>
+            <button id="createEntryBtn">➕ Create Entry</button>
+        </div>
+        <div id="dynamicEntryForm"></div>
+    </section>
+
+    <section id="extras"></section>
+
+
+    <div class="form">
+        <h3>New Skill</h3>
+        <input type="text" name="" id="newskillname" placeholder="Skill name (e.g., JavaScript)">
+        <input type="number" name="" id="newskilltime" placeholder="Time/week (hrs)">
+        <input type="number" name="" id="newskillprogress" placeholder="Progress (%)">
+        <textarea name="" id="newskillnotes" placeholder="Any notes or learning goals..."></textarea>
+        <button id="addskillbtn">Add Skill</button>
+    </div>
+
+    <div class="form">
+        <h3>New Project</h3>
+        <input type="text" name="" id="newprojectname" placeholder="Project title (e.g., Portfolio Site)">
+        <select name="" id="newprojectstatus">
+            <option value="completed">✅ Completed</option>
+            <option value="in-progress">🛠 In Progress</option>
+            <option value="planned">📝 Planned</option>
+        </select>
+        <textarea name="" id="newprojectdesc" placeholder="Brief project description..."></textarea>
+        <button id="addprojectbtn">Add Project</button>
+    </div>
+
+    <footer id="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Zaid's Dev Journey. All rights reserved.</p>
+            <p>Built with 💻 + ☕ by C MOHAMMED ZAID</a>
+            </p>
+            <div class="social-links">
+                <a href="mailto:mohammedzaid.connect@gmail.com">Email</a> |
+                <a href="https://github.com/c-mohammed-zaid" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/mohammedzaidc" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
