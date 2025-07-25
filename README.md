@@ -24,13 +24,13 @@ Here's how it empowers the user:
 - **📝 Add New Entry System**
   A dynamic, multi-purpose entry system that includes:
 
-| Entry Type | Purpose |
-|------------|---------|
-| `Note`     | Write down personal notes, code concepts, definitions, or reminders. |
-| `Log`      | Log daily/weekly learning progress like a journal. |
-| `Idea`     | Capture project, app, or business ideas you might want to build. |
-| `Goal`     | Set short-term or long-term learning/career goals. |
-| `Link`     | Bookmark useful web resources (blogs, videos, articles). |
+  | Entry Type | Purpose |
+  |------------|---------|
+  | `Note`     | Write down personal notes, code concepts, definitions, or reminders. |
+  | `Log`      | Log daily/weekly learning progress like a journal. |
+  | `Idea`     | Capture project, app, or business ideas you might want to build. |
+  | `Goal`     | Set short-term or long-term learning/career goals. |
+  | `Link`     | Bookmark useful web resources (blogs, videos, articles). |
 
   - A dropdown allows the user to select entry types dynamically.
   - Clicking "Add New Entry" renders a new UI form, and stores the values directly into the DOM.
